@@ -1,0 +1,10 @@
+.img-main-logo{
+    max-width: 6rem;
+    max-height: 3rem;
+    object-fit: contain;
+
+    transform: scale(1.5);
+    margin-left: 5rem;
+
+}
+

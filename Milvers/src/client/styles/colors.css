@@ -1,0 +1,91 @@
+
+/* white blue combination */
+.color-normal{
+    background-color: rgb(104, 159, 215);
+    color: white;
+}
+
+.color-normal:hover{
+    background-color: white;
+    color: rgb(104, 159, 215);
+    border: 1px solid rgb(104, 159, 215) ;
+}
+.color-inverted{
+    background-color: white;
+    color: rgb(104, 159, 215);
+    border: 1px solid rgb(104, 159, 215) ;
+}
+
+.color-inverted:hover{
+    background-color: rgb(104, 159, 215);
+    color: white;
+}
+
+/* backgrounds */
+
+.bg-black{
+    background-color: rgb(39, 39, 39);
+}
+
+.bg-gray{
+    background-color: rgb(106, 107, 110);
+}
+
+.bg-white{
+    background-color: white;
+}
+
+.light-orange{
+    background-color: rgb(253, 210, 177);
+}
+
+.bg-orange{
+    background-color: rgba(255, 119, 0, 0.781);
+}
+
+.bg-milvers-blue{
+    background-color: rgb(108, 157, 213);
+}
+
+.bg-blackhsl{
+    
+    background-color:  rgba(0, 0, 0, 0.06);
+    width: 100%;
+    
+}
+
+.bg-whitehsl{
+    background-color:  rgba(255, 255, 255, 0.407);
+    width: 100%;
+}
+
+.bg-transparent{
+    background-color: transparent;
+}
+
+.bg-milvers-blue{
+    background-color: rgb(108, 157, 213);
+}
+
+.bg-milvers-lightblue{
+    background-color: rgb(133, 185, 245);
+}
+
+.transparent{
+    border: transparent;
+    background-color: transparent;
+    color: transparent;
+}
+
+/* colors */
+.white{
+    color: white;
+}
+
+.orange{
+    color: rgba(255, 119, 0, 0.781);
+}
+
+.milvers-blue{
+    color: rgb(108, 157, 213);
+}

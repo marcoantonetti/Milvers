@@ -1,0 +1,66 @@
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 699;
+}
+
+.retract {
+  width: 100dvw; /* Start with full width */
+  height: 100dvh; /* Full height */
+  animation: retractHeight 2s forwards; /* Apply the animation */
+}
+
+.delay {
+  animation-delay: 1.5s;
+}
+
+.more-delay {
+  animation-delay: 2.7s;
+}
+
+.title {
+  animation: displayTransition 3.6s ; /* Multiple animations */
+  animation-delay: 0s;
+  opacity: 0;
+  z-index: 700;
+}
+
+.title2 {
+  padding-right: 0.7rem;
+  animation: displayTransition 2.9s;
+  animation-delay: 0.9s;
+}
+
+@keyframes retractHeight {
+  0% {
+    height: 100%; /* Start at full width */
+}
+70%{
+    filter: brightness(0.4);
+}
+100% {
+    height: 0%; /* End at zero width */
+  }
+}
+
+@keyframes displayTransition {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  50% {
+    display: block;
+    opacity: 1;
+  }
+}
+

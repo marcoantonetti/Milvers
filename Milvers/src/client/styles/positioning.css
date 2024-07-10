@@ -1,0 +1,186 @@
+.bg-video {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-size: cover;
+    background: no-repeat center;
+    user-select: none;
+    pointer-events: none;
+  
+    /*custom styles, for example grayscale appearance*/
+    filter: grayscale(0.8);
+  
+    /*additional tweaks for positioning, read more in the link above*/
+    height: 100%;
+    width: 177.77777778vh; /* 100 * 16 / 9 */
+    min-width: 100%;
+    min-height: 56.25vw; /* 100 * 9 / 16 */
+    z-index: -99;
+  }
+
+.hide{
+    display: none;
+}
+
+.padding{
+    padding: 1rem 0rem;
+}
+
+.sm-padding{
+    padding: 0rem 2rem;
+}
+
+.bg-margin{
+    margin: 4rem 0rem;
+}
+
+/* display flex properties */
+
+.flex{
+    display: flex;
+}
+
+.center{
+    justify-content: center;
+    align-items: start;
+}
+
+.centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.space-btwn{
+    justify-content: space-between;
+}
+
+/* flex end start */
+
+.flex-start{
+    display: flex;
+    justify-content: start;
+}
+
+.flex-end{
+    display: flex;
+    justify-content: end;
+}
+
+/* Positioning */
+.abs-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fixed{
+    position: fixed;
+    top: 5;
+    right: 0;
+    z-index: 500; 
+}
+
+.pos-relative{
+    position: relative;
+}
+
+/* specific absolute positions */
+
+.pos-abs{
+    position: absolute;
+}
+
+.top-right{
+    top: 1rem;
+    right: 1rem;
+    z-index: 200
+}
+
+.full-screen {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Optional: for a semi-transparent background */
+    z-index: 999; /* Optional: ensure it appears above other elements */
+  }
+
+.pos1{
+    top: 10rem;
+    right: 10rem;
+    transform: rotate(140deg);
+
+}
+
+.pos2{
+    top: 15rem;
+    right: 17rem;
+    transform: rotate(70deg);
+}
+
+.pos3{
+    top: 20rem;
+    right: 37rem;
+    transform: rotate(30deg);
+}
+
+.pos4{
+    top: 6rem;
+    right: 30rem;
+    transform: rotate(230deg);
+
+}
+
+.pos5{
+    top: 6rem;
+    right:50rem;
+    transform: rotate(320deg);
+
+}
+
+.right-10px{
+    right: 10px;
+}
+/* gaps */
+
+.sm-gap{
+    gap: 0.5rem;
+}
+
+.md-gap{
+    gap: 1rem
+}
+
+/* height / width */
+
+.width-40{
+width: 40%;
+}
+
+.width-100{
+    width: 100%;
+    }
+
+.height-80{
+    height: 15rem;
+}
+
+
+
+/* text-allign */
+
+.txt-center{
+    text-align: center;
+}

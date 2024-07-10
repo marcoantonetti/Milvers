@@ -1,0 +1,30 @@
+.wallpaper {
+    background-color: #ffffff;
+    background-image:  linear-gradient(#dfd6d6 1px, transparent 1px), linear-gradient(to right, #dfd6d6 1px, #ffffff 1px);
+    background-size: 180px 180px;
+    width: 100vw;
+
+    
+}
+
+.render-container{
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease;
+
+}
+
+.render-wallpaper{
+    background-image: url(/images/black_rock.jpg);
+    background-size: contain; 
+
+    border: solid 1px transparent;
+    width: 100%;
+    height: 25rem;
+    background-position: center; /* Center the image */
+
+
+    
+    transition: transform 1s ease;
+
+}
