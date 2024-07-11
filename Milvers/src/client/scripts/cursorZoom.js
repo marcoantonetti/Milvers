@@ -1,4 +1,3 @@
-export zoomIn
 
 document.addEventListener('DOMContentLoaded', () => {
     const zoomContainer = document.querySelector('.render-image-container');

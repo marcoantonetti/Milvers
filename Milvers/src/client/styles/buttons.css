@@ -13,34 +13,6 @@
     cursor: pointer;
 }
 
-.nav-buttons{
-    margin-right: -1rem;
-    position: relative;
-}
-
-.nav-button{
-    position: relative;
-}
-
-.nav-button:hover{
-    transition: 0.2s;
-    cursor: pointer;
-}
-
-.nav-button::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 1.6px;
-    background-color: #000;
-    transition: width 0.3s ease-in-out;
-}
-
-.nav-button:hover::after {
-    width: 100%;
-}
 
 /* arrow buttons */
 .containerArrow{

@@ -4,18 +4,20 @@ import { Link } from 'react-router-dom';
 
 const NavButtons = (props) => {
 
-    const { name, link  } = props
+    const { name, link, number,visibility  } = props
 
 
     return (
-    <li className= "nav-button flex-row" >
+    <li className='li-nav'>
+     <Link onClick={() => visibility(false)} to={link} smooth='true' className="a-nav-link nav-button-container" >
+        
+        <p className='number'>{number}</p>
 
-        {/* <Link to={link} smooth='true' className="a-nav-link"> */}
 
-        {name} 
+        <p >{name} </p>
 
-        {/* </Link> */}
 
+        </Link>
     </li>
     )
 }

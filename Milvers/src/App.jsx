@@ -1,14 +1,25 @@
 import NavBar from "./client/components/NavBar";
 import TemplateInfo from "./client/components/TemplateInfo";
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import LandingTitle from "./client/components/LandingTitle";
 import Footer from "./client/components/Footer";
-import { ArrowButton } from "./client/components/buttons/ArrowButton";
 import { RenderContainer } from "./client/views/product/RenderContainer";
+import { LandingPage } from "./client/components/landingPage/LandingPage";
+import { AboutUs } from "./client/components/aboutUs/AboutUs";
+import { Services } from "./client/components/services/Services";
+import { Apc } from "./client/components/services/APC/Apc";
+import { Bim } from "./client/components/services/bim/Bim";
+import { Hev } from "./client/components/services/hev/Hev";
+import { Contact } from "./client/components/contact/Contact";
 
 
 function App() {
   return (
+    
+    <Router>
     <div className="wallpaper">
+
+      
 
  
     {/* <iframe className="bg-video"
@@ -18,34 +29,29 @@ function App() {
         allowfullscreen>
         </iframe>       */}
       
-      <LandingTitle />
+      {/* <LandingTitle /> */}
       <NavBar />
+      <LandingTitle/>
+
+      <Routes>
+        <Route path="/" element={<LandingPage/>}/>
+        <Route path="/about" element={<AboutUs/>}/>
+        <Route path="/services" element={<Services/>}/>
+        <Route path="/contact" element={<Contact/>}/>
+        <Route path="/services/apc" element={<Apc/>}/>
+        <Route path="/services/bim" element={<Bim/>}/>
+        <Route path="/services/hev" element={<Hev/>}/>
+      </Routes>
 
       <div className="padding">
-      <TemplateInfo
-        title="Drive your projects to new heights"
-        ifBtn={true}
-        right={false}
-        text="Our approach is based on applying all our experience to be your BIM Partner, saving you time, effort and money."
-        />
-        <RenderContainer/>
-            <TemplateInfo
-        title="Welcome to Blend"
-        ifBtn={true}
-        right={false}
-        text="We are an organization founded  by four partners based in the US and Argentina, each one with more than 20 years of international experience in the AEC industry. Meet us in this video."
-      />
-            <TemplateInfo
-        title="Drive your projects to new heights"
-        ifBtn={true}
-        right = {true}
-        text="Our approach is based on applying all our experience to be your BIM Partner, saving you time, effort and money."
-      />
+ 
 
 
     </div>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
+    </Router>
+
   );
 }
 

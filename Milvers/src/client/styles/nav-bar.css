@@ -1,0 +1,113 @@
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 4rem;
+    position: relative;
+}
+
+.nav-h2-menu {
+    font-size: 1.3rem; /* Adjust font size as necessary */
+    position: absolute;
+    right: 3rem;
+    top: 0rem;
+    z-index: 100;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth color change */
+}
+
+
+.nav-dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 0vh; /* Start with height 0 */
+    width: 100vw;
+    z-index: 0;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden; /* Hide overflow content */
+
+    transition: height 00.7s, background-color ease 1s; /* Smooth height and background-color transition */
+}
+
+.nav-dropdown.display {
+    height: 100vh; /* Expand height to full screen when display is block */
+    overflow-y: auto; /* Enable scrolling for content */
+}
+
+/*  Nav Bar Buttons */
+
+.nav-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin: 1rem 3rem 1rem 0rem;
+    color: white; /* Default text color */
+}
+
+.nav-button-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+
+    font-size: 1.7rem;
+    border-bottom: 1px white solid;
+    cursor: pointer;
+}
+
+
+.a-nav-link{
+    text-decoration: none;
+    color: inherit;
+}
+.nav-buttons{
+    margin-right: -1rem;
+    position: relative;
+}
+
+/* Hover */
+
+
+.nav-button-container:hover{
+    gap: 5rem;
+    justify-content: center;
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+/* Animations */
+
+@keyframes toCenter {
+    0% {
+        justify-content: space-between;
+    }
+ 
+    100% {
+        justify-content: center;
+    }
+}
+
+
+
+@keyframes opacityTransition {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+

@@ -6,7 +6,7 @@ export default function TemplateInfo(props) {
   return (
     
     <div className={`templateContainer width-100 ${right ? "flex-end" : "flex-start"}`}>
-    <div className={"templateInfo width-40  height-80  flex-col center"}>
+    <div className={"templateInfo width-100  height-80  flex-col center"}>
       <h2 className="template-title">{title}</h2>
 
       <div className="flex-col md-gap">

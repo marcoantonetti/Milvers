@@ -10,6 +10,10 @@ import "./client/styles/wallpapers.css"
 import "./client/styles/templates.css"
 import "./client/styles/footer.css"
 import "./client/styles/index.css"
+import "./client/styles/nav-bar.css"
+import "./client/styles/services/services.css"
+
+
 
 
 

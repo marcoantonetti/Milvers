@@ -1,8 +1,8 @@
 .container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  right: 0;
+  overflow: hidden; /* Hide overflow content */
   width: 100vw;
   height: 100vh;
   
@@ -36,9 +36,8 @@
 }
 
 .title2 {
-  padding-right: 0.7rem;
   animation: displayTransition 2.9s;
-  animation-delay: 0.9s;
+  animation-delay: 1.1s;
 }
 
 @keyframes retractHeight {
